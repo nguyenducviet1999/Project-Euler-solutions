@@ -27,6 +27,12 @@ public final class LibraryTest {
 		assertEquals("a0a", Library.reverse("a0a"));
 	}
 	
+	@Test public void testreciprocalMod(){
+		//test flow data
+		assertEquals(1, Library.reciprocalMod(1, 2));
+		assertEquals(1 ,Library.reciprocalMod(1, 2));
+	}
+	
 	
 	@Test public void testIsPalindromeString() {
 		assertTrue(Library.isPalindrome(""));
