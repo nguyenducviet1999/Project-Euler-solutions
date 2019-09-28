@@ -28,6 +28,16 @@ public final class LibraryTest {
 	}
 	
 	
+	@Test public void  testreciprocalMod(){
+		//flow data test (All-DU path)
+		assertEquals(0, Library.reciprocalMod(0, 1));
+		assertEquals(1, Library.reciprocalMod(1, 2));
+		assertEquals(3, Library.reciprocalMod(3, 4));
+		assertEquals(4, Library.reciprocalMod(2, 7));
+		assertEquals(1, Library.reciprocalMod(1, 5));	
+	}
+	
+	
 	@Test public void testIsPalindromeString() {
 		assertTrue(Library.isPalindrome(""));
 		assertTrue(Library.isPalindrome("a"));
